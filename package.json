@@ -1,0 +1,25 @@
+{
+  "name": "samples-bootstrap-theme",
+  "version": "0.1.0",
+  "description": "Common assets and styles for the Auth0 Quickstart applications, based on Bootstrap",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auth0-samples/samples-bootstrap-theme.git"
+  },
+  "keywords": [
+    "auth0",
+    "css",
+    "bootstrap4",
+    "scss",
+    "node"
+  ],
+  "author": "Auth0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/auth0-samples/samples-bootstrap-theme/issues"
+  },
+  "homepage": "https://github.com/auth0-samples/samples-bootstrap-theme#readme",
+  "private": true
+}
