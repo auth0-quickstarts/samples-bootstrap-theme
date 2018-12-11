@@ -59,7 +59,9 @@ sass.render(
           output: buildOptions.minOutput,
           callback: (err, result) => {
             if (err) {
-              console.error(chalk.red(`Failed to write auth0theme.min.css`));
+              console.error(
+                chalk.red(`Failed to write ${buildOptions.minOutput}`)
+              );
             } else {
               console.log(
                 `Wrote ${chalk.yellow(
