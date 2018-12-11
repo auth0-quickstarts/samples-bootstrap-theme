@@ -18,12 +18,10 @@ const buildOptions = {
   minOutput: path.join(outputCssDir, `${baseFilename}.min.css`)
 };
 
+// Create the output directory if it doesn't exist
 mkdirp.sync('dist/css');
 
-if (fs.existsSync(buildOptions.output)) {
-  fs.unlinkSync(buildOptions.output);
-}
-
+// Helper to write buffers
 const writeBuffer = (buffer, filename, cb) => {
   const wstream = fs.createWriteStream(filename);
   wstream.write(buffer, err => {
@@ -32,6 +30,7 @@ const writeBuffer = (buffer, filename, cb) => {
   });
 };
 
+// Render SASS files to CSS
 sass.render(
   {
     file: buildOptions.input,
@@ -39,6 +38,7 @@ sass.render(
     sourceMap: true
   },
   (err, result) => {
+    // Write the uncompressed CSS data
     writeBuffer(result.css, buildOptions.output, () => {
       console.log(
         `Wrote ${chalk.yellow(path.basename(buildOptions.output))} in ${
@@ -46,6 +46,7 @@ sass.render(
         }ms (${chalk.green(humanize.filesize(result.css.byteLength))})`
       );
 
+      // Write the map file
       writeBuffer(result.map, buildOptions.mapOutput, () => {
         console.log(
           `Wrote ${chalk.yellow(
@@ -53,6 +54,7 @@ sass.render(
           )} (${chalk.green(humanize.filesize(result.map.byteLength))})`
         );
 
+        // Minify and write the CSS data to another file (*.min.css)
         minify({
           compressor: cleanCss,
           input: buildOptions.output,
