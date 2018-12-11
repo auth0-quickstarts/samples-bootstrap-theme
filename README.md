@@ -6,9 +6,15 @@ A theme for the Auth0 Quickstart applications based on [Bootstrap 4](https://get
 
 [To follow]
 
-## Usage
+## Building Assets
 
-[To follow]
+To build the CSS assets into the `dist/` folder, use:
+
+```bash
+npm run build
+```
+
+This will then compile SCSS files into CSS, and minify the file to produce a production-ready version.
 
 ## Version Information
 
