@@ -1,11 +1,15 @@
 {
   "name": "samples-bootstrap-theme",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Common assets and styles for the Auth0 Quickstart applications, based on Bootstrap",
-  "main": "index.js",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "clean": "rm -rf dist",
+    "rebuild": "npm run clean && npm run build"
   },
+  "files": [
+    "dist/css"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/auth0-samples/samples-bootstrap-theme.git"
