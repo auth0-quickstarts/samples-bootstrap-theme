@@ -44,18 +44,19 @@ module.exports = async context => {
       )})`
     );
 
+    // Read the unminified css that has just been created
     const cssContents = await readFileAsync(outputFile, 'utf-8');
 
     // Minify the css..
-    const { styles: minified, sourceMap } = new cleanCss({
+    const { styles: minifiedStyles, sourceMap } = new cleanCss({
       sourceMap: true
     }).minify(cssContents);
 
     // Write it to a file..
-    await writeFileAsync(outputMinFile, minified);
+    await writeFileAsync(outputMinFile, minifiedStyles);
     console.log(
       `Wrote ${chalk.yellow(basename(outputMinFile))} (${chalk.green(
-        humanize.filesize(minified.length)
+        humanize.filesize(minifiedStyles.length)
       )})`
     );
 
