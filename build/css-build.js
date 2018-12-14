@@ -11,7 +11,7 @@ const renderAsync = promisify(sass.render);
 
 module.exports = async context => {
   const outputDir = join(context.outputDir, 'css');
-  const inputFile = join(context.sourceDir, 'entry.scss');
+  const inputFile = join(context.sourceDir, 'scss', 'entry.scss');
   const outputFile = join(outputDir, `${context.libName}.css`);
   const outputMapFile = join(outputDir, `${context.libName}.css.map`);
   const outputMinFile = join(outputDir, `${context.libName}.min.css`);

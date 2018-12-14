@@ -1,0 +1,16 @@
+$color-primary: #0066f9;
+$color-background: #eff1f5;
+
+$text-primary: #041433;
+
+@mixin shadow-bottom {
+  box-shadow: 0px 1px 2px 0px #dfe3ec;
+}
+
+@mixin shadow-top {
+  box-shadow: 0px -1px 2px 0px #dfe3ec;
+}
+
+@mixin full-shadow {
+  box-shadow: 0px 0px 4px 0px #b3bac7;
+}

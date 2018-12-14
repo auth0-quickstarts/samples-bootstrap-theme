@@ -1,0 +1,89 @@
+@import "colors";
+
+.navbar {
+  height: 104px;
+  background-color: $color-background;
+
+  .router-link-exact-active {
+    color: $text-primary;
+    border-bottom: 3px solid $color-primary;
+  }
+
+  @include shadow-bottom();
+}
+
+.navbar-light {
+  .navbar-brand {
+    margin-right: 60px;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $text-primary;
+      padding: 0 0 7.5px 0;
+      box-sizing: border-box;
+      margin: 0 40px 0 0;
+      font-weight: 400;
+
+      &:hover {
+        color: darken($text-primary, 10%);
+      }
+    }
+
+    .btn {
+      min-width: 145px;
+    }
+  }
+}
+
+.nav-user-profile {
+  border-radius: 50% 50%;
+  width: 62px;
+  height: 62px;
+  @include full-shadow();
+}
+
+.nav-item.dropdown {
+  .dropdown-toggle {
+    margin: 0;
+  }
+
+  .dropdown-name {
+    font-weight: 600;
+  }
+
+  .router-link-exact-active {
+    border: 0;
+  }
+
+  .dropdown-menu {
+    @include full-shadow();
+  }
+
+  .dropdown-header {
+    border-bottom: 1px solid #b3bac7;
+    font-size: 16px;
+    font-weight: 600;
+    color: $text-primary;
+  }
+
+  .dropdown-item {
+    border-bottom: 1px solid #b3bac7;
+    padding: .55rem 1.5rem;
+
+    .icon {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    &:first-child {
+      &:hover {
+        background: inherit;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
