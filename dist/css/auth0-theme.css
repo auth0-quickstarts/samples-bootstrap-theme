@@ -6341,7 +6341,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-left: 3px solid #0066f9;
     padding-left: 10px !important;
     vertical-align: middle; }
-  .navbar-nav {
+  .navbar-nav:first-child {
     margin-top: 1.5em; } }
 
 .nav-user-profile {
