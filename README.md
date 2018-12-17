@@ -4,7 +4,11 @@ A theme for the Auth0 Quickstart applications based on [Bootstrap 4](https://get
 
 ## Installation
 
-[To follow]
+To install the theme, use:
+
+```bash
+npm install --save-dev auth0-samples/samples-bootstrap-theme
+```
 
 ## Building Assets
 
