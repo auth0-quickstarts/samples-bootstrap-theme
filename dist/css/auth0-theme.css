@@ -6313,8 +6313,8 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 .navbar {
-  height: 104px;
   background-color: #eff1f5;
+  padding: 52px 16px;
   box-shadow: 0px 1px 2px 0px #dfe3ec; }
   .navbar .router-link-exact-active {
     color: #041433;
@@ -6334,6 +6334,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-light .navbar-nav .btn {
   min-width: 145px; }
+
+@media (max-width: 992px) {
+  .nav-link.router-link-exact-active {
+    border-bottom: 0;
+    border-left: 3px solid #0066f9;
+    padding-left: 10px !important;
+    vertical-align: middle; } }
 
 .nav-user-profile {
   border-radius: 50% 50%;
@@ -6361,7 +6368,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav-item.dropdown .dropdown-item {
   border-bottom: 1px solid #b3bac7;
-  padding: .55rem 1.5rem; }
+  padding: 0.55rem 1.5rem; }
   .nav-item.dropdown .dropdown-item .icon {
     margin-right: 8px;
     vertical-align: middle; }
