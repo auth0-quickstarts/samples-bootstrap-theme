@@ -1,5 +1,8 @@
 @import 'colors';
 
+$nav-expanded-padding: 40px;
+$navitem-expanded-padding: $nav-expanded-padding - 16px;
+
 .navbar {
   background-color: $color-background;
   padding: 22px 0;
@@ -37,18 +40,6 @@
 }
 
 @media (max-width: 767px) {
-  .nav-link {
-    &.router-link-exact-active {
-      border-bottom: 0;
-      border-left: 3px solid #0066f9;
-      padding-left: 13px !important;
-      vertical-align: middle;
-    }
-  }
-
-  .navbar-nav:first-child {
-    margin-top: 1.5em;
-  }
 }
 
 .nav-user-profile {
@@ -99,6 +90,86 @@
 
     &:last-child {
       border-bottom: 0;
+    }
+  }
+}
+
+.navbar {
+  padding: 22px 0;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: inherit;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-link {
+    &.router-link-exact-active {
+      border-bottom: 0;
+      border-left: 3px solid #0066f9;
+      padding-left: 13px !important;
+      vertical-align: middle;
+    }
+
+    padding: inherit;
+  }
+
+  .navbar-brand {
+    margin-left: $nav-expanded-padding;
+    vertical-align: top;
+  }
+
+  .navbar-toggler {
+    margin-right: $nav-expanded-padding;
+  }
+
+  .navbar-nav {
+    &:first-child {
+      margin-top: 1.5em;
+    }
+
+    margin-left: $navitem-expanded-padding;
+    margin-right: $navitem-expanded-padding;
+
+    &:last-child {
+      background: white;
+      box-shadow: 0 -1px 2px 0 #dfe3ec;
+      margin: 1.5em 0 0 0;
+      padding: 1.5em $nav-expanded-padding;
+
+      li {
+        margin-bottom: 1em;
+
+        .icon {
+          margin-right: 1em;
+          vertical-align: middle;
+        }
+
+        a {
+          vertical-align: middle;
+          color: #041433;
+        }
+      }
+    }
+
+    .user-info {
+      img {
+        margin-right: 1em;
+      }
     }
   }
 }
