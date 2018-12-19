@@ -6337,8 +6337,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav-user-profile {
   border-radius: 50% 50%;
-  width: 62px;
-  height: 62px;
+  max-width: 3.785rem;
+  height: auto;
   box-shadow: 0px 0px 4px 0px #b3bac7; }
 
 .nav-item.dropdown .dropdown-toggle {
@@ -6455,7 +6455,7 @@ footer {
     .hero p.lead a {
       font-weight: 500; }
   .hero .app-logo {
-    max-width: 120px; }
+    max-width: 7.5rem; }
 
 .next-steps {
   padding: 0 32px; }

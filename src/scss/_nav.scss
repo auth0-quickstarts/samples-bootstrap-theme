@@ -45,8 +45,8 @@ $navitem-expanded-padding: 1.5rem;
 
 .nav-user-profile {
   border-radius: 50% 50%;
-  width: 62px;
-  height: 62px;
+  max-width: 3.785rem;
+  height: auto;
   @include full-shadow();
 }
 
