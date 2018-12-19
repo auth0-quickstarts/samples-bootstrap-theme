@@ -16,27 +16,25 @@ $navitem-expanded-padding: 1.5rem;
   @include shadow-bottom();
 }
 
-.navbar-light {
-  .navbar-brand {
-    margin-right: 60px;
+.navbar-brand {
+  margin-right: 60px;
+}
+
+.navbar-nav {
+  .nav-link {
+    color: $text-primary;
+    padding: 0 0 0.5rem 0;
+    box-sizing: border-box;
+    margin: 0 40px 0 0;
+    font-weight: 400;
+
+    &:hover {
+      color: darken($text-primary, 10%);
+    }
   }
 
-  .navbar-nav {
-    .nav-link {
-      color: $text-primary;
-      padding: 0 0 0.5rem 0;
-      box-sizing: border-box;
-      margin: 0 40px 0 0;
-      font-weight: 400;
-
-      &:hover {
-        color: darken($text-primary, 10%);
-      }
-    }
-
-    .btn {
-      min-width: 145px;
-    }
+  .btn {
+    min-width: 145px;
   }
 }
 
@@ -127,8 +125,6 @@ $navitem-expanded-padding: 1.5rem;
         padding-left: 13px !important;
         vertical-align: middle;
       }
-
-      padding: inherit;
     }
   }
 

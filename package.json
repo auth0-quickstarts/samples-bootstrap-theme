@@ -1,6 +1,6 @@
 {
   "name": "samples-bootstrap-theme",
-  "version": "0.2.15",
+  "version": "0.2.16",
   "description": "Common assets and styles for the Auth0 Quickstart applications, based on Bootstrap",
   "scripts": {
     "build": "node build/index.js",
