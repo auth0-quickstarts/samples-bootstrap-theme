@@ -6443,6 +6443,33 @@ footer {
   footer .logo {
     margin: 0 auto 10px auto; }
 
+.hero {
+  max-width: 500px;
+  margin: 0 auto; }
+  .hero p.lead {
+    margin-bottom: 10rem;
+    font-size: 1.45rem; }
+    .hero p.lead a {
+      font-weight: 500; }
+  .hero .app-logo {
+    max-width: 120px; }
+
+.next-steps {
+  padding: 0 32px; }
+  .next-steps h2 {
+    margin-bottom: 4rem; }
+  .next-steps .row {
+    margin-bottom: 3rem; }
+
+@media (max-width: 768px) {
+  .next-steps .row {
+    margin-bottom: 0; }
+  .next-steps h6 {
+    margin-top: 1.5rem; } }
+
+.rounded-circle {
+  box-shadow: 0px 0px 4px 0px #b3bac7; }
+
 body {
   color: #041433; }
 
@@ -6455,10 +6482,5 @@ a {
 .btn-primary {
   background-color: #0066f9;
   border: 1px solid #005ce0; }
-
-.lead {
-  max-width: 500px;
-  margin: 0 auto;
-  font-size: 1.45rem; }
 
 /*# sourceMappingURL=auth0-theme.css.map */

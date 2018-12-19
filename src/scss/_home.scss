@@ -1,0 +1,43 @@
+.hero {
+  max-width: 500px;
+  margin: 0 auto;
+
+  p {
+    &.lead {
+      margin-bottom: 10rem;
+      font-size: 1.45rem;
+
+      a {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .app-logo {
+    max-width: 120px;
+  }
+}
+
+.next-steps {
+  padding: 0 32px;
+
+  h2 {
+    margin-bottom: 4rem;
+  }
+
+  .row {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .next-steps {
+    .row {
+      margin-bottom: 0;
+    }
+
+    h6 {
+      margin-top: 1.5rem;
+    }
+  }
+}

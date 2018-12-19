@@ -3,6 +3,8 @@
 @import 'nav';
 @import 'icons';
 @import 'footer';
+@import 'home';
+@import 'profile';
 
 body {
   color: $text-primary;
@@ -24,10 +26,4 @@ a {
 .btn-primary {
   background-color: $color-primary;
   border: 1px solid darken($color-primary, 5%);
-}
-
-.lead {
-  max-width: 500px;
-  margin: 0 auto;
-  font-size: 1.45rem;
 }
