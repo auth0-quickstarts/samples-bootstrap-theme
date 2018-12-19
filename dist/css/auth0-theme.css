@@ -6467,8 +6467,21 @@ footer {
   .next-steps h6 {
     margin-top: 1.5rem; } }
 
-.profile-picture {
-  box-shadow: 0px 0px 4px 0px #b3bac7; }
+pre {
+  width: 100%; }
+
+.profile-header {
+  margin-bottom: 3rem; }
+  .profile-header .lead {
+    font-size: 1.25rem; }
+  .profile-header .profile-picture {
+    box-shadow: 0px 0px 4px 0px #b3bac7; }
+
+@media (max-width: 767px) {
+  .profile-header {
+    text-align: center; }
+    .profile-header .profile-picture {
+      margin-bottom: 1.5rem; } }
 
 html {
   font-size: 16px; }

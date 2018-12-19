@@ -1,5 +1,27 @@
 @import 'colors';
 
-.profile-picture {
-  @include full-shadow();
+pre {
+  width: 100%;
+}
+
+.profile-header {
+  margin-bottom: 3rem;
+
+  .lead {
+    font-size: 1.25rem;
+  }
+
+  .profile-picture {
+    @include full-shadow();
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-header {
+    text-align: center;
+
+    .profile-picture {
+      margin-bottom: 1.5rem;
+    }
+  }
 }
