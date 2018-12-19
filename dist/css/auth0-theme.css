@@ -6312,6 +6312,9 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.navbar-light.bg-light .nav-link {
+  color: #041433; }
+
 .navbar {
   background-color: #eff1f5;
   padding: 1.375rem 0;

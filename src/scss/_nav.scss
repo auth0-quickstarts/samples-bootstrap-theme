@@ -4,6 +4,14 @@ $nav-standard-padding: 1.375rem;
 $nav-expanded-padding: 2.5rem;
 $navitem-expanded-padding: 1.5rem;
 
+.navbar-light {
+  &.bg-light {
+    .nav-link {
+      color: $text-primary;
+    }
+  }
+}
+
 .navbar {
   background-color: $color-background;
   padding: 1.375rem 0;
