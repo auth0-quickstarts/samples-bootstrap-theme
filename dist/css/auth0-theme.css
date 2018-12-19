@@ -6386,7 +6386,10 @@ a.text-dark:hover, a.text-dark:focus {
     max-width: 1140px; } }
 
 @media (max-width: 767px) {
+  .nav-item {
+    margin-bottom: 0.5rem; }
   .nav-link {
+    padding-left: 16px;
     padding: inherit; }
     .nav-link.router-link-exact-active {
       border-bottom: 0;

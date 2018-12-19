@@ -40,9 +40,6 @@ $navitem-expanded-padding: 1.5rem;
   }
 }
 
-@media (max-width: 767px) {
-}
-
 .nav-user-profile {
   border-radius: 50% 50%;
   max-width: 3.785rem;
@@ -118,7 +115,13 @@ $navitem-expanded-padding: 1.5rem;
 }
 
 @media (max-width: 767px) {
+  .nav-item {
+    margin-bottom: 0.5rem;
+  }
+
   .nav-link {
+    padding-left: 16px;
+
     &.router-link-exact-active {
       border-bottom: 0;
       border-left: 3px solid #0066f9;
