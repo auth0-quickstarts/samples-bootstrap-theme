@@ -1,9 +1,9 @@
-@import "colors";
+@import 'colors';
 
 footer {
   background: $color-background;
   @include shadow-top();
-  height: 132px;
+  min-height: 132px;
   text-align: center;
   padding: 32px;
 
