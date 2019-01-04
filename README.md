@@ -10,6 +10,15 @@ To install the theme, use:
 npm install --save-dev auth0-samples/samples-bootstrap-theme
 ```
 
+
+If you plan on using any of the JavaScript components in the Bootstrap library, you will also need to install [jQuery](https://github.com/jquery/jquery):
+
+```bash
+npm install --save-dev jquery
+```
+
+> **Note**: The intended use for this library is for the Auth0 QuickStart projects, which _do_ make use of JavaScript-enabled components, and so jQuery will need to be installed.
+
 ## Building Assets
 
 To build the CSS assets into the `dist/` folder, use:
@@ -19,6 +28,10 @@ npm run build
 ```
 
 This will then compile SCSS files into CSS, and minify the file to produce a production-ready version.
+
+## Implementing the Custom Theme
+
+Please read the [implementation guide](docs/implementing-the-theme.md) for integrating this theme into a project.
 
 ## Version Information
 
