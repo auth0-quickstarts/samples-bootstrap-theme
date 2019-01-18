@@ -31,7 +31,7 @@ This will then compile SCSS files into CSS, and minify the file to produce a pro
 
 ## Implementing the Custom Theme
 
-Please read the [implementation guide](docs/implementing-the-theme.md) for integrating this theme into a project.
+Please read the [implementation guide](https://github.com/auth0-samples/samples-bootstrap-theme/wiki/Implementing-the-Design) for integrating this theme into a project.
 
 ## Version Information
 
