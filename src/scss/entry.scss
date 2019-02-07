@@ -31,3 +31,7 @@ a {
   background-color: $color-primary;
   border: 1px solid darken($color-primary, 5%);
 }
+
+.btn {
+  border-radius: 0.1rem;
+}
