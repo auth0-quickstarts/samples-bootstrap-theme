@@ -1,10 +1,11 @@
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import 'colors';
-@import 'nav';
-@import 'icons';
-@import 'footer';
-@import 'home';
-@import 'profile';
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "colors";
+@import "nav";
+@import "icons";
+@import "footer";
+@import "home";
+@import "profile";
+@import "api";
 
 html {
   font-size: 16px;

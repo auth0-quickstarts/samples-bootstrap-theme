@@ -1,6 +1,6 @@
 {
   "name": "samples-bootstrap-theme",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Common assets and styles for the Auth0 Quickstart applications, based on Bootstrap",
   "scripts": {
     "build": "gulp",

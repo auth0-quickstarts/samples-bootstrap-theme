@@ -7100,6 +7100,23 @@ pre {
     .profile-header .profile-picture {
       margin-bottom: 1.5rem; } }
 
+.result-block-container {
+  position: relative;
+  min-height: 300px; }
+
+.result-block {
+  top: -10px;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s; }
+  .result-block.show {
+    opacity: 1;
+    top: 0px; }
+
+@media only screen and (min-width: 768px) {
+  .result-block {
+    min-width: 700px; } }
+
 html {
   font-size: 16px; }
 
