@@ -1,0 +1,24 @@
+
+
+.result-block-container {
+  position: relative;
+  min-height: 300px;
+}
+
+.result-block {
+  top: -10px;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s;
+
+  &.show {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .result-block {
+    min-width: 700px;
+  }
+}
