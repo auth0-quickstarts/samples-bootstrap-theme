@@ -7,7 +7,7 @@ A theme for the Auth0 Quickstart applications based on [Bootstrap 4](https://get
 To install the theme, use:
 
 ```bash
-npm install --save-dev auth0-samples/samples-bootstrap-theme
+npm install --save-dev auth0-quickstarts/samples-bootstrap-theme
 ```
 
 
