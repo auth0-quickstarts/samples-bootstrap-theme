@@ -5,7 +5,8 @@
   "scripts": {
     "build": "gulp",
     "clean": "rm -rf dist",
-    "rebuild": "npm run clean && npm run build"
+    "rebuild": "npm run clean && npm run build",
+    "publish:cdn": "ccu --trace"
   },
   "files": [
     "dist"
@@ -30,6 +31,7 @@
   "homepage": "https://github.com/auth0-samples/samples-bootstrap-theme#readme",
   "private": true,
   "devDependencies": {
+    "@auth0/component-cdn-uploader": "github:auth0/component-cdn-uploader#v2.2.2",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-rename": "^1.4.0",
@@ -41,5 +43,20 @@
   "dependencies": {},
   "engines": {
     "node": ">= 7.6"
+  },
+  "ccu": {
+    "name": "auth0-samples-theme",
+    "cdn": "https://cdn.auth0.com",
+    "mainBundleFile": "auth0-theme.min.css",
+    "bucket": "assets.us.auth0.com",
+    "localPath": "dist",
+    "digest": {
+      "hashes": [
+        "sha384"
+      ],
+      "extensions": [
+        ".css"
+      ]
+    }
   }
 }
