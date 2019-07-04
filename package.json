@@ -10,7 +10,7 @@
   "files": [
     "dist"
   ],
-  "main": "dist/js/auth0-theme.min.js",
+  "main": "dist/css/auth0-theme.min.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/auth0-samples/samples-bootstrap-theme.git"
