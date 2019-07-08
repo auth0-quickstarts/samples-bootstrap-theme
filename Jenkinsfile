@@ -29,6 +29,9 @@ pipeline {
       }
     }
     stage('Publish to CDN') {
+      when {
+        branch 'master'
+      }
       steps {
         sshagent(['auth0extensions-ssh-key']) {
           sh 'npm run publish:cdn'
