@@ -4,17 +4,24 @@ A theme for the Auth0 Quickstart applications based on [Bootstrap 4](https://get
 
 ## Installation
 
-To install the theme, use:
+Install the theme from the CDN:
 
-```bash
-npm install --save-dev auth0-quickstarts/samples-bootstrap-theme
+```html
+<link rel="stylesheet" href="https://cdn.auth0.com/js/auth0-samples-theme/1.0/css/auth0-theme.min.css" />
 ```
 
+As the theme is based on Bootstrap 4, you will also need to include Bootstrap's CSS:
 
-If you plan on using any of the JavaScript components in the Bootstrap library, you will also need to install [jQuery](https://github.com/jquery/jquery):
+```html
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+```
 
-```bash
-npm install --save-dev jquery
+As well as the JavaScript assets if you are not using a library such as [Reactstrap](https://reactstrap.github.io/) or [Bootstrap Widgets for Angular](https://ng-bootstrap.github.io/#/home):
+
+```html
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 ```
 
 > **Note**: The intended use for this library is for the Auth0 QuickStart projects, which _do_ make use of JavaScript-enabled components, and so jQuery will need to be installed.
