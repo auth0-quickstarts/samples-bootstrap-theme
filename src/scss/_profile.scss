@@ -1,10 +1,11 @@
-@import 'colors';
+@import "colors";
 
 pre {
   width: 100%;
 }
 
 .profile-header {
+  text-align: center;
   margin-bottom: 3rem;
 
   .lead {
@@ -13,15 +14,16 @@ pre {
 
   .profile-picture {
     @include full-shadow();
+    margin-bottom: 1.5rem;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .profile-header {
-    text-align: center;
+    text-align: left;
 
     .profile-picture {
-      margin-bottom: 1.5rem;
+      margin-bottom: inherit;
     }
   }
 }

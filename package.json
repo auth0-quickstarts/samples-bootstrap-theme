@@ -1,16 +1,17 @@
 {
   "name": "samples-bootstrap-theme",
-  "version": "0.5.1",
+  "version": "1.0.0",
   "description": "Common assets and styles for the Auth0 Quickstart applications, based on Bootstrap",
   "scripts": {
     "build": "gulp",
     "clean": "rm -rf dist",
-    "rebuild": "npm run clean && npm run build"
+    "rebuild": "npm run clean && npm run build",
+    "publish:cdn": "ccu --trace"
   },
   "files": [
     "dist"
   ],
-  "main": "dist/js/auth0-theme.min.js",
+  "main": "dist/css/auth0-theme.min.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/auth0-samples/samples-bootstrap-theme.git"
@@ -30,23 +31,32 @@
   "homepage": "https://github.com/auth0-samples/samples-bootstrap-theme#readme",
   "private": true,
   "devDependencies": {
-    "bootstrap": "^4.3.1",
+    "@auth0/component-cdn-uploader": "github:auth0/component-cdn-uploader#v2.2.2",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "jquery-slim": "^3.0.0",
     "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.5",
-    "popper.js": "^1.14.7",
-    "pre-commit": "^1.2.2",
     "rimraf": "^2.6.3"
   },
   "dependencies": {},
   "engines": {
     "node": ">= 7.6"
   },
-  "pre-commit": [
-    "build"
-  ]
+  "ccu": {
+    "name": "auth0-samples-theme",
+    "cdn": "https://cdn.auth0.com",
+    "mainBundleFile": "auth0-theme.min.css",
+    "bucket": "assets.us.auth0.com",
+    "localPath": "dist",
+    "digest": {
+      "hashes": [
+        "sha384"
+      ],
+      "extensions": [
+        ".css"
+      ]
+    }
+  }
 }
